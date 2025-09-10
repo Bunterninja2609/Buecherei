@@ -31,6 +31,7 @@ public class Window {
             }
         });
     }
+
     private void increaseBookIndex(int i) {
         bookIndex += i;
         shelfIndex = bookIndex/library.getShelfSize();

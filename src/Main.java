@@ -9,7 +9,7 @@ public class Main {
         frame = new JFrame();
         frame.setContentPane(window.getContentPane());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setPreferredSize(new Dimension(300, 200));
+        frame.setPreferredSize(new Dimension(500, 300));
         frame.pack();
         frame.setVisible(true);
 

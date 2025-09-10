@@ -2,15 +2,17 @@ import java.util.Random;
 
 public class Container {
     private static String[] firstName = {
-            "Vladimir", "Helena", "Muhamed", "Jesus", "Heinz", "Günter", "Karl", "Jemans"
+            "Vladimir", "Helena", "Muhamed", "Jesus", "Heinz", "Günter", "Karl", "Jemans", "Tom", "Miot", "Joshua", "Bennet", "Viktoria"
     };
     private static String[] lastName = {
-            "Kachinski", "Hadupsi", "Abdul", "Christ", "Müller", "Ghünter", "Marx", "Niemans"
+            "Kachinski", "Hadupsi", "Abdul", "Christ", "Müller", "Ghünter", "Marx", "Niemans","Qadouri", "Stiefelenergie", "Schuhkraft", "Becker", "Draxler", "Gromov"
     };
     private static String[] genre = {"Horror", "Philosophy", "Action", "Adventure", "Comedy", "Drama"};
 
-    private static String[] titleStart = {"", "Money", "Cars", "Memory", "Science", "Technology", "Fun", "Religion", "Tomfolery", "Love"};
-    private static String[] titleEnd = {"Capital", "Downfall of Society", "Savior", "Solution", "Genocide", "Story", "Tragedy", "Joke", "Ignorance of people", "Dilemma", "Story in 2 Acts", "Analyzation of Society"};
+    private static String[] titleStart = {"", "Money ", "Cars ", "Memory ", "Science ", "Technology ", "Fun ", "Religion ", "Tomfolery ", "Love ", "Joshi ", "Tom ", "David ", "Bennet ", "Elias ", "God ", "Lust ", "HELP ME "};
+    private static String[] titleEnd = {"Capital", "Downfall of Society", "Savior", "Solution", "Genocide", "Story", "Tragedy", "Joke", "Ignorance of the people", "Dilemma", "Story in 2 Acts", "Analyzation of Society", "Socialist Worldrevolution", "Fool", "Whore", "Idiocy", "Movie", "Tutorial", "Life", "Sadness"};
+    private static String[] titleArticle = {"The ", "A ", "Some "};
+    private static String[] titleVerb = {"", ", ", "Was ", "Is ", "In ", "Without ", "And "};
     public static String generateAuthor() {
         int firstNameIndex = (int)(Math.random()* firstName.length);
         int lastNameIndex = (int)(Math.random()* lastName.length);
@@ -23,6 +25,8 @@ public class Container {
     public static String generateTitle() {
         int titleStartIndex = (int)(Math.random()* titleStart.length);
         int titleEndIndex = (int)(Math.random()* titleEnd.length);
-        return titleStart[titleStartIndex] + " the " + titleEnd[titleEndIndex];
+        int titleArticleIndex = (int)(Math.random()* titleArticle.length);
+        int titleVerbIndex = (int)(Math.random()* titleVerb.length);
+        return titleStart[titleStartIndex] + titleVerb[titleVerbIndex] + titleArticle[titleArticleIndex] + titleEnd[titleEndIndex];
     }
 }
