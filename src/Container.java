@@ -11,8 +11,8 @@ public class Container {
 
     private static String[] titleStart = {"", "Money ", "Cars ", "Memory ", "Science ", "Technology ", "Fun ", "Religion ", "Tomfolery ", "Love ", "Joshi ", "Tom ", "David ", "Bennet ", "Elias ", "God ", "Lust ", "HELP ME "};
     private static String[] titleEnd = {"Capital", "Downfall of Society", "Savior", "Solution", "Genocide", "Story", "Tragedy", "Joke", "Ignorance of the people", "Dilemma", "Story in 2 Acts", "Analyzation of Society", "Socialist Worldrevolution", "Fool", "Whore", "Idiocy", "Movie", "Tutorial", "Life", "Sadness"};
-    private static String[] titleArticle = {"The ", "A ", "Some "};
-    private static String[] titleVerb = {"", ", ", "Was ", "Is ", "In ", "Without ", "And "};
+    private static String[] titleArticle = {"The ", "A ", "Some ", "The One And Only "};
+    private static String[] titleVerb = {"", ", ", "Was ", "Is ", "In ", "Without ", "And ", "With "};
     public static String generateAuthor() {
         int firstNameIndex = (int)(Math.random()* firstName.length);
         int lastNameIndex = (int)(Math.random()* lastName.length);
