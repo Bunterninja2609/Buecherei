@@ -14,5 +14,7 @@ public class Bookshelf {
     public Book getBook(int i){
         return books[i];
     }
-
+    public Book[] getBooks(){
+        return books;
+    }
 }
