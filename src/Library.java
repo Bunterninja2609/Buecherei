@@ -41,6 +41,13 @@ public class Library {
         }
         //System.out.println(books.size());
         return books.toArray(new Book[books.size()]);
-
+    }
+    public int getBookshelfIndex(Bookshelf bookshelf) {
+        for (int i = 0; i < bookshelfs.length; i++) {
+            if (bookshelfs[i].equals(bookshelf)) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
