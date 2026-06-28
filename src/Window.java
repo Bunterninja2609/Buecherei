@@ -93,9 +93,6 @@ public class Window {
         this.titleField.setText(book.getTitle());
         this.authorField.setText(book.getAuthor());
         this.genreField.setText(book.getGenre());
-        bookIndex = book.getShelf().getBookIndex(book) + library.getShelfSize()*library.getShelfSize()*library.getBookshelfIndex(book.getShelf());
-        currentBook.setText("Book " + (book.getShelf().getBookIndex(book) +1) + " in Shelf " + (library.getBookshelfIndex(book.getShelf())+1));
-
         searchResult.setText((filteredBookIndex + 1) + " out of " + filteredBooks.length);
     }
     private void filter(){
